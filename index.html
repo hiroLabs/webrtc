@@ -28,6 +28,10 @@
             <button href="#" class="pure-button pure-button-success" type="submit">End Call</button
         </form>	
 		</div>
+		
+		<!--<div style ="margin-top:60px" >
+			<button  class="pure-button pure-button-success" type="button" onclick = "videoPlay()">Video Start</button>
+		</div>-->
 	
     </div>
 
@@ -53,3 +57,21 @@
 <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </html>
+
+<script type="text/javascript">
+
+function videoPlay(){
+	var video1 = document.getElementById('their-video') ;
+	var video2 = document.getElementById('my-video') ;
+	
+	video1.play() ;
+	video2.play() ;
+
+}
+function get_connectID(){
+
+	var connectId = document.getElementById('my-id').innerHTML ;
+	
+	return connectId ;
+}
+</script>
